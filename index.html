@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CV</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -17,33 +21,39 @@
 
     <header>
 
-        <!--Mettre une photo avec une balise IMG-->
+        <div id="image">
 
-    </header>
+          <a href="../cv-en-ligne/assets/image/Fond d'écran verrouillage Chat.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="../cv-en-ligne/assets/image/Fond d'écran verrouillage Chat.jpg" alt="Photo de profil" width="50%">
 
-    <main>
+        </div>
 
-        <section id="presentation">
+        <div id="adresse">
 
             <h1>Kenza Funel</h1>
 
             <h2>Developpeur Web et Web Mobile</h2>
 
             <div id="contact">
-
-                <a href="mailto:kf@gmail.com">Mail</a>
-
-                <phone><a href="tel:+33623456789">Téléphone</a></phone>
-
-                <address><a href="https://www.google.fr/maps/place/194+Rue+du+Dauphin%C3%A9,+38780+Estrablin/@45.5162662,4.9666119,19z/data=!3m1!4b1!4m6!3m5!1s0x47f4d85c9bf6f309:0xfffd55c4d7e71705!8m2!3d45.5162653!4d4.9672556!16s%2Fg%2F11c1gpvslg?hl=fr&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D">Adresse</a></address>
-
-                <p>Permis B</p>
-
+                <div class="icon-text">
+                    <div class="ligne">
+                        <span class="bloc"><i class="fas fa-envelope" style="color: white;"></i> <a href="mailto:kf@gmail.com">Mail</a></span>
+                
+                        <span class="bloc"><i class="fas fa-phone" style="color: white;"></i><phone><a href="tel:+33623456789">Téléphone</a></phone></span>
+                    </div>
+                    <div class="ligne">
+                        <span class="bloc"><i class="fas fa-home" style="color: white;"></i><address><a href="https://www.google.fr/maps/place/194+Rue+du+Dauphin%C3%A9,+38780+Estrablin/@45.5162662,4.9666119,19z/data=!3m1!4b1!4m6!3m5!1s0x47f4d85c9bf6f309:0xfffd55c4d7e71705!8m2!3d45.5162653!4d4.9672556!16s%2Fg%2F11c1gpvslg?hl=fr&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D">Adresse</a></address></span>
+                
+                        <span class="bloc"><i class="fas fa-car" style="color: white;"></i><div>Permis B</div></span>
+                    </div>
+                </div>
             </div>
 
-        </section>
+        </div>
 
- 
+    </header>
+
+    <main>
 
         <section id="information">
 
@@ -51,15 +61,50 @@
 
             <hr>
 
-            <div id="competence">
+            <div id="competence"> 
+                <div class="ligne-competence">
+                <span class="nom">HTML</span>
+                <span class="etoiles">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </div>
+            
+                <div class="ligne-competence">
+                <span class="nom">CSS</span>
+                <span class="etoiles">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </div>
+ 
+                <div class="ligne-competence">
+                <span class="nom">Javascript</span>
+                <span class="etoiles">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </div>
 
-                <p>HTML</p>
-
-                <p>CSS</p>
-
-                <p>Javascript</p>
-
-                <p>PHP</p>
+                <div class="ligne-competence">
+                <span class="nom">PHP</span>
+                <span class="etoiles">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </div>
 
             </div>
 
@@ -71,17 +116,20 @@
 
             <div id="langues">
 
-                <p><span class="gauche">Français</span>
+                <div class="ligne">
+                    <span class="gauche">Français</span>
+                    <span class="droite">Langue maternelle</span>
+                </div>
 
-                <span class="droite">Langue maternelle</span></p>
+                <div class="ligne">
+                    <span class="gauche">Anglais</span>
+                    <span class="droite">Professionnel</span>
+                </div>
 
-                <p><span class="gauche">Anglais</span>
-
-                <span class="droite">Professionnel</span></p>
-
-                <p><span class="droite">Allemand</span>
-
-                <span class="gauche">Notions</span></p>
+                <div class="ligne">
+                    <span class="gauche">Allemand</span>
+                    <span class="droite">Notions</span>
+                </div>
 
             </div>
 
@@ -154,19 +202,21 @@
                 <hr>
 
                 <div id="titre">
+                    <div class="bloc-experience">
+                        <div class="gauche">
 
-                    <div class="gauche">
+                            <h4>Titre Professionnel DWWM</h4>
 
-                        <h4>Titre Professionnel DWWM</h4>
+                            <span>Centre Européen de Formation</span>
 
-                        <span>Centre Européen de Formation</span>
+                        </div>
+                    
 
-                    </div>
+                        <div class="droite">
 
-                    <div class="droite">
+                            <span>2023-2024</span>
 
-                        <span>2023-2024</span>
-
+                        </div>
                     </div>
 
                 </div>
@@ -176,19 +226,20 @@
  
 
                 <div id="remise">
+                    <div class="bloc-experience">
+                        <div class="gauche">
 
-                    <div class="gauche">
+                            <h4>Remise à Niveau - Métiers du numérique</h4>
 
-                        <h4>Remise à Niveau - Métiers du numérique</h4>
+                            <span>Lycée de la ville</span>
 
-                        <span>Lycée de la ville</span>
+                        </div>
 
-                    </div>
+                        <div class="droite">
 
-                    <div class="droite">
+                            <span>Juin 2023 - Septembre 2023</span>
 
-                        <span>Juin 2023 - Septembre 2023</span>
-
+                        </div>
                     </div>
 
                 </div>
@@ -198,19 +249,20 @@
  
 
                 <div id="bac">
+                    <div class="bloc-experience">
+                        <div class="gauche">
 
-                    <div class="gauche">
+                            <h4>Baccalauréat</h4>
 
-                        <h4>Baccalauréat</h4>
+                            <span>Lycée de la ville</span>
 
-                        <span>Lycée de la ville</span>
+                        </div>
 
-                    </div>
+                        <div class="droite">
 
-                    <div class="droite">
+                            <span>1983</span>
 
-                        <span>1983</span>
-
+                        </div>
                     </div>
 
                 </div>
@@ -226,35 +278,37 @@
                 <h3>Stages</h3>
 
                 <hr>
+                <div class="bloc-experience">
+                    <div class="gauche">
 
-                <div class="gauche">
+                        <h4>Gestionnaire de paye</h4>
 
-                    <h4>Gestionnaire de paye</h4>
+                        <span>Société Truc & Machin</span>
 
-                    <span>Société Truc & Machin</span>
+                    </div>
 
-                </div>
+                    <div class="droite">
 
-                <div class="droite">
+                        <span>Mars 2022 - Avril 2022</span>
 
-                    <span>Mars 2022 - Avril 2022</span>
-
+                    </div>
                 </div>
 
  
+                <div class="bloc-experience">
+                    <div class="gauche">
 
-                <div class="gauche">
+                        <h4>Agent d'acceuil</h4>
 
-                    <h4>Agent d'acceuil</h4>
+                        <span>Mairie de la ville</span>
 
-                    <span>Mairie de la ville</span>
+                    </div>
 
-                </div>
+                    <div class="droite">
 
-                <div class="droite">
+                        <span>Janvier 2021 - Février 2021</span>
 
-                    <span>Janvier 2021 - Février 2021</span>
-
+                    </div>
                 </div>
 
             </section>
@@ -266,51 +320,54 @@
                 <h3>Expérience professionnelle</h3>
 
                 <hr>
+                <div class="bloc-experience">
+                    <div class="gauche">
 
-                <div class="gauche">
+                        <h4>Agent d'acceuil</h4>
 
-                    <h4>Agent d'acceuil</h4>
+                        <span>Mairie de la ville</span>
 
-                    <span>Mairie de la ville</span>
+                    </div>
 
-                </div>
+                    <div class="droite">
 
-                <div class="droite">
+                        <span>Mars 2021- Juillet 2021</span>
 
-                    <span>Mars 2021- Juillet 2021</span>
-
-                </div>
-
- 
-
-                <div class="gauche">
-
-                    <h4>Chauffeur - Livreur</h4>
-
-                    <span>Transport Nénès & Fils</span>
-
-                </div>
-
-                <div class="droite">
-
-                    <span>Septembre 2021 - Décembre 2021</span>
-
+                    </div>
                 </div>
 
  
+                <div class="bloc-experience">
+                    <div class="gauche">
 
-                <div class="gauche">
+                        <h4>Chauffeur - Livreur</h4>
 
-                    <h4>Préparateur de commandes</h4>
+                        <span>Transport Nénès & Fils</span>
 
-                    <span>Le slip français</span>
+                    </div>
 
+                    <div class="droite">
+
+                        <span>Septembre 2021 - Décembre 2021</span>
+
+                    </div>
                 </div>
 
-                <div class="droite">
+ 
+                <div class="bloc-experience">
+                    <div class="gauche">
 
-                    <span>Janvier 2000 - Septembre 2000</span>
+                        <h4>Préparateur de commandes</h4>
 
+                        <span>Le slip français</span>
+
+                    </div>
+
+                    <div class="droite">
+
+                        <span>Janvier 2000 - Septembre 2000</span>
+
+                    </div>
                 </div>
 
             </section>
@@ -319,19 +376,20 @@
 
         </section>
 
-   
-
- 
-
-        <footer>
-
-            <!--Logos-->
-
-            <p>Mis à jour le : JJ/MM/AAAA</p>
-
-        </footer>
-
     </main>
+
+    <footer>
+
+        <div id="reseaux">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+
+        <div id="date">Mis à jour le : JJ/MM/AAAA</div>
+
+    </footer>
 
 </body>
 

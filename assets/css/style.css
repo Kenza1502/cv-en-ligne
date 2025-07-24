@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: "raleway", sans-serif;
+}
+
+header {
+    display: flex;
+    text-align: center;
+}
+
+#image {
+    background: #17abb3;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    cursor: zoom-in;
+}
+
+#adresse {
+    background: #17abb3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.ligne {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.bloc {
+  display: flex;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+
+h1 {
+    margin-bottom: 0.3em;
+    color: #ffffff;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+    font-style: normal;
+}
+
+.icon-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    text-indent: 5px;
+}
+
+#information {
+    background: #f5f5f5;
+    width: 30%;
+}
+
+#experience {
+    background: #ffffff;
+    width: 70%;
+}
+
+#competence {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: 20px;
+}
+
+.ligne-competence {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nom {
+  font-weight: bold;
+  color: #333333;
+}
+
+.etoiles {
+  color: #17abb3;
+  font-size: 14px;
+}
+
+h3 {
+    color: #17abb3;
+    margin: 20px;
+}
+
+hr {
+  width:90%;
+  height: 1px;
+  background-color: #e3e3e3;
+  border: none;
+}
+
+
+#langues .ligne {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin: 10px 20px;
+}
+
+#langues .gauche {
+    font-weight: bold;
+}
+
+.gauche {
+  text-align: left;
+  
+}
+
+.droite {
+  text-align: right;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li::marker {
+  color: #17abb3;
+}
+
+p {
+  text-indent: 30px;
+  margin: 0px 20px;
+}
+
+#profil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    
+}
+
+h4 {
+    font-style: normal;
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#formation {
+    margin: 20px;
+}
+
+#formation .gauche {
+    line-height: 0;
+    font-style: italic;
+    font-size: 10px;
+}
+
+#formation .droite {
+    color: #17abb3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#stage {
+    margin: 20px;
+}
+
+#stage .gauche {
+    line-height: 0;
+    font-style: italic;
+    font-size: 10px;
+}
+
+#stage .droite {
+    color: #17abb3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#profession {
+    margin: 20px;
+}
+
+#profession .gauche {
+    line-height: 0;
+    font-style: italic;
+    font-size: 10px;
+}
+
+#profession .droite {
+    color: #17abb3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer {
+    background: #17abb3;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#date {
+    font-size: 10px;
+    color: #ffffff;
+
+}
+
+#reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    width: 100%;
+}
+
+body {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloc-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    margin: 10px 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.bloc-experience:hover {
+    background-color: #e0f7f8;
+}
+
+.bloc-experience:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #17abb3;
+    border-radius: 2px;
+}
+
+#reseaux a:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
