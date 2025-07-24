@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: "raleway", sans-serif;
+}
+
 header {
     display: flex;
     text-align: center;
@@ -16,6 +27,8 @@ header {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    border: 4px solid #ffffff;
+    cursor: zoom-in;
 }
 
 #adresse {
@@ -52,11 +65,13 @@ header {
 
 h1 {
     margin-bottom: 0.3em;
+    color: #ffffff;
 }
 
 h2 {
     margin-top: 0;
     font-size: 20px;
+    color: #ffffff;
 }
 
 a {
@@ -82,10 +97,6 @@ a {
 #experience {
     background: #ffffff;
     width: 70%;
-}
-
-main {
-    display: flex;
 }
 
 #competence {
@@ -244,4 +255,47 @@ footer {
     gap: 20px;
     margin-bottom: 10px;
     color: #ffffff;
+    width: 100%;
+}
+
+body {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloc-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    margin: 10px 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.bloc-experience:hover {
+    background-color: #e0f7f8;
+}
+
+.bloc-experience:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #17abb3;
+    border-radius: 2px;
+}
+
+#reseaux a:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
