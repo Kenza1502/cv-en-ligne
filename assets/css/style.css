@@ -58,3 +58,82 @@ a {
     align-items: center;
     gap: 4px;
 }
+
+#information {
+    background: #f5f5f5;
+    width: 30%;
+}
+
+#experience {
+    background: #ffffff;
+    width: 70%;
+}
+
+main {
+    display: flex;
+}
+
+#competence {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: 20px;
+}
+
+.ligne-competence {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nom {
+  font-weight: bold;
+  color: #333333;
+}
+
+.etoiles {
+  color: #17abb3;
+  font-size: 14px;
+}
+
+h3 {
+    color: #17abb3;
+    margin: 20px;
+}
+
+hr {
+  width:90%;
+  height: 1px;
+  background-color: #e3e3e3;
+  border: none;
+}
+
+
+#langues .ligne {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin: 10px 20px;
+}
+
+#langues .gauche {
+    font-weight: bold;
+}
+
+.gauche {
+  text-align: left;
+  
+}
+
+.droite {
+  text-align: right;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li::marker {
+  color: #17abb3;
+}
